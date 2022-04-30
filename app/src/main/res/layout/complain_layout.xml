@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/complainIV"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/complainimg" />
+
+    <View
+        android:id="@+id/complainIVview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#68201F1F"
+        app:layout_constraintBottom_toBottomOf="@+id/complainIV"
+        app:layout_constraintEnd_toEndOf="@+id/complainIV"
+        app:layout_constraintStart_toStartOf="@+id/complainIV"
+        app:layout_constraintTop_toTopOf="@+id/complainIV" />
+
+    <TextView
+        android:id="@+id/clickhereTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_italic"
+        android:text="Click Here to Add Image"
+        android:textColor="#F4F0F0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/complainIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/complainIV"
+        app:layout_constraintTop_toTopOf="@+id/complainIV" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@+id/complainIV"
+        app:layout_constraintBottom_toBottomOf="@+id/complainIV"
+        app:layout_constraintRight_toRightOf="@+id/complainIV"
+        app:layout_constraintLeft_toLeftOf="@+id/complainIV"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/progress_bg"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/complainIV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="77dp"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/progress_bg"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complainIV">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/conditionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="45dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="CONDITION:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/conditionSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbar_bg"
+                    android:thumb="@drawable/thump" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rangeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="45dp"
+                android:text="(in metre)"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RANGE:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/rangeSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbar_bg"
+                    android:thumb="@drawable/thump" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textbox_outline"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/phoneET"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Enter Your Phone number"
+                android:inputType="phone"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+
+                android:textColor="#000000"
+                android:textColorHint="#323232" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/getOtp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:text="Get OTP" />
+
+
+        <EditText
+
+            android:id="@+id/otpET"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/otp_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="OTP"
+            android:inputType="number"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#874A4A4A"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/continuebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/orange"
+            android:text="Continue"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/progress_bg"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

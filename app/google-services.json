@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "624296844003",
+    "firebase_url": "https://pit-locator-f745b-default-rtdb.firebaseio.com",
+    "project_id": "pit-locator-f745b",
+    "storage_bucket": "pit-locator-f745b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624296844003:android:4b54e6b003d748d04783d6",
+        "android_client_info": {
+          "package_name": "com.example.pitlocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624296844003-l4krvseolhepbv40q3ti9ih3117agoqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pitlocator",
+            "certificate_hash": "9aa874a45698601654e33674a35cb257b271df96"
+          }
+        },
+        {
+          "client_id": "624296844003-pnqft14upki190ibi2j1fehs7lm72d8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pitlocator",
+            "certificate_hash": "477d06cd2077b475d101c9db305e49588c895153"
+          }
+        },
+        {
+          "client_id": "624296844003-ho4qh9vs2tcbisut6fc2fibem613ta5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-p8-Ul5iaiHTvKecQuynlwsK3xBAjRbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624296844003-ho4qh9vs2tcbisut6fc2fibem613ta5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
