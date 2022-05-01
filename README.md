@@ -3,11 +3,11 @@
 ###Uploading and updating the database of Pothole on roads in map to help people drive carefully when the roads are flooded.<br>
  
 [<img align="left" alt="Java" width="50px" src="https://www.pngkey.com/png/detail/178-1787508_github-icon-download-at-icons8-white-github-icon.png"/>
-<-Application Source Code](link)
+<-Application Source Code](https://github.com/Akash1308/PitLocator)
 
 <br><br>
- Project PPT- [Minor Project | 6th Sem](link)<br>
- Project Report- [ Pit-Locator  - Presentation](link)
+ Project PPT- [Minor Project | 6th Sem](https://github.com/Akash1308/PitLocator/blob/master/GR922_Dipanshu_Mishra(SIH)-1.pptx)<br>
+ Project Report- [ Pit-Locator  - Presentation](https://github.com/Akash1308/PitLocator/blob/master/Minor%20Project%20II%20(Pit%20Locator).docx)
 
 <hr>
 
